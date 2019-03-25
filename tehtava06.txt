@@ -1,0 +1,9 @@
+#mitaan uudelleen latausta ei tapahdu ainoastaan taustalla lahetetaan selaimelle uusi note
+
+note over selain:
+prevent default
+lisataan note paikallisesti listaan jatkeeksi, taman jalkeen lahetetaan serverille
+end note 
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+palvelin->selain: response statuskoodilla 201 = created
